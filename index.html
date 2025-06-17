@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    
+    <title>AI Poem</title>
+  </head>
+
+  <body>
+    <div class="slide-right">
+    <h1>AI Marvel Poem Generator</h1>
+    </div>
+
+  <main>
+    <div class="form-container">
+    <form id="poem-generator-form">
+      <input 
+      type="text"
+      placeholder="enter a superhero c:"
+      autofocus
+      required
+      autocomplete="off"
+      id="user-instructions"
+
+       />
+       <input type="submit" />
+       </form>
+       <div class="hint">i.e: Hulk, Jarvis or Doctor Strange teleportation</div>
+      </div>
+       <br>
+
+       <div class="poem" id="poem"></div>
+       
+  </main>
+
+    <footer>
+        <p>
+          This AI project was coded by
+          <a href="#"target="_blank">Crystal Gomez</a> and is
+          <a href="https://github.com" target="_blank">open-sourced on GitHub</a> and
+          <a href="https://www.netlify.com/" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+ 
+      <script src="src/index.js"></script>
+  </body>
+</html>

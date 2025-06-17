@@ -1,0 +1,132 @@
+body {
+
+    background: #ebf5a8; 
+    text-align: center;
+}
+
+main {
+border: 1px solid black;       /* Thinnest recommended */
+  background: black;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 10px 10px black;
+  width: fit-content;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+   font-family: "Honk", system-ui;
+   font-optical-sizing: auto;
+   font-weight: 40;
+   font-style: normal;
+   font-variation-settings:
+     "MORF" 15,
+     "SHLN" 50;
+   font-size: 60px;
+   text-shadow: 2px 2px 5px black;
+   
+}
+
+
+.hint {
+    line-height: 0;
+    font-size: 10px;
+    margin-top: 5px;
+    opacity: 0.5;
+    text-align: center;
+    position: relative;
+    left: -40.5px; /* Shift the element 10px to the left */
+}
+
+input {
+  box-shadow: 4px 4px 4px black;
+  border: 2px solid black;  
+  border-radius: 6px;
+  background: #f7f9f9;
+  padding: 10px 90px;
+  color: black;
+  text-align: center; /* 👈 THIS centers the text */
+    
+}
+
+div {
+    font-size: 14px;
+    background-color: #f7f9f9;
+    padding:20px 40px 20px;
+    line-height: 24px;
+    font-weight: 400;
+    border-radius: 10px 10px 10px;
+    line-height: 24px;
+    
+    transition: background-color 0.3s ease; 
+    margin-bottom: 10px;
+    margin: 0 auto;
+    border-width: 5px;
+}
+
+input[type="submit"] {
+    background-color: #ebf5a8; 
+    color: rgb(250, 221, 247);              
+    border: 2px solid black;    
+    border-radius: 8px;        
+    padding: 6px 12px;       
+    font-size: 16px;            
+    font-weight: bold;         
+    cursor: pointer;            
+    transition: background-color 0.3s ease; 
+    margin-left: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+
+input[type="submit"]:hover {
+    background-color: #CCCCFF; 
+}
+
+.slide-right {
+    width: 100%; 
+    max-width: 90%;
+    margin: 0 auto; 
+    background-color: #ebf5a8;  
+    padding: 0px 20px;
+    overflow: hidden;
+
+}
+
+.slide-right h1 {
+    animation: 1s slide-right 1s forwards;
+    transform: translateX(-100%);
+    max-width: 100%
+}
+
+@keyframes slide-right {
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+/* the user experience portion below*/
+.generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 30px;
+}
